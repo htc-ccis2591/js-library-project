@@ -1,0 +1,61 @@
+# jquery-fav-things
+For this assignment we will add and remove information from a web page when triggered by click events.
+
+Gather some information on your favorite things.  One part of that information will need to be something non-textual, like an image, sound clip or embedded video link. You will need a list of at least 5 things.
+
+## Goals:
+
+- Use the jQuery ready function to keep your code out of global scope
+- Use JavaScript coding best practices for variable and function definition
+- Use jQuery to build HTML to add items to the DOM
+- Use jQuery to handle click events
+- Show and present your code to the class in 8-10 minutes
+
+
+## GitHub Repository
+https://github.com/htc-ccis2591/jquery-project1/
+
+As usual you will need to fork and clone this repository to begin the assignment, and submit a pull request for grading when the assignment is complete.  
+
+
+## Design the HTML Layout
+Before you try to write JavaScript code to put these favorite things into HTML, you’ll want to know what that HTML looks like.  Update the test.html page with the HTML to show one of your favorite things.  This will allow you to address any layout and styling concerns before moving on to the JavaScript code.  
+
+__Note:__ The test.html page will be graded, so you might as well do it first and make your life easier.
+
+As you design the structure, think of each thing as a section, article, or div element with child tags such as headings, paragraphs, images, etc.  The content will need to be laid out so that there is an item of your choice (i.e. a heading or image) that we can show initially while the other content is hidden.  We will then click that to show the additional information, so wrap it in a div or some other parent element to make this easier.
+
+
+## Page Behavior
+When the page first loads, you should display only a button or text that says something like:  “Click here to see my favorite things”.
+
+When that text or button is clicked, then you should remove that it from the DOM (not just hide it), and then add your favorite things into the DOM.  When they first load, only the main heading or image (whatever you designed as your summary clickable thing) should show. The remainder of the information should be in the DOM (you should see it in the Dev Tools Elements view) but should be hidden by using a CSS class.
+
+When the summary item is clicked, all other item’s detail information should be hidden and that items detail information should be shown.  
+
+__Important Note:__  Yes, jQuery has a UI component to do this.  No you cannot use it for this assignment. The assignment involves the creation of your own show/hide behavior to illustrate that you understand some basic jQuery and JavaScript.  Using any other 3rd party component to do this defeats the purpose of the assignment.
+
+
+## Code Structure
+You will use jQuery to set up click events to trigger the initial favorites display and to add/remove your CSS class to hide the detail information on each thing.
+
+It is also expected that you will use functions to organize your code and to avoid repetition (copy/paste) of code.  At a minimum, I would expect a function that builds the HTML one favorite thing that is parameterized so that you do not repeat that code over and over to build each item.  This will also make it easier for you to change or modify that layout later if needed or desired.
+
+### Tips
+- Be sure to use all of the JavaScript coding best practices that we have discussed.
+- Make and use functions; try to keep them small, don’t make long unreadable monster code.
+- Watch the scope of your variables.  Keep things to as small a scope as possible.
+- Be sure to test the show/hide of your sections in different orders to ensure that they are work correctly.
+- Don't forget to include something non-textual for each favorite thing.
+- I don't expect much beauty, but things shouldn't be squished into the edges of the page either. Consider using [Bootstrap](http://getbootstrap.com/) to get a quick edge on layout.
+
+## Presentation
+The project must be submitted with a pull request before the start of class the day that it is due.  In-class, you will show your page to the class as published on GitHub, and walk through what your page does and the code that you wrote. The presentation is limited to 10 minutes, with a hard rude stop if you run over.  However you also do not want your presentation to be too short or less than 8 minutes.
+
+### What should you cover?
+- Who you are!!! Do not forget to introduce yourself.  It may help to write your name on the board so people do not mishear.
+- What your page does. Yes, all of them basically do the same thing.  It’s ok. Pretend that someone comes in and flash clears everyone’s memory between presentations. You need to say it all again.
+- The favorite things are super cool and all, but remember to focus on the code.  
+
+## Extras
+Work on your page layout & presentation. Ensure the page is responsive and looks good on various display sizes. Use a nice color scheme that suits your content, and doesn't look mismatched or gaudy.  [Paleton](http://paletton.com/) can help.
