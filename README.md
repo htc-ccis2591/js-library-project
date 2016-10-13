@@ -37,7 +37,7 @@ You will need to build a web page from scratch and add enough styling to the pag
 
 
 ### Application Overview
-You will also need to include a README file with your project that discusses how you used the library in your project.  This should clearly call out the features of the library you used.  The best way to do this is with code snippets and/or screen shots. You can include HTML tags in your README.md file to add images, just make sure to upload those images to GitHub with your project.  Code highlighting can be done as described in [GitHub Help - Creating and highlighting code blocks ](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
+You will also need to include a README.md file with your project that discusses how you used the library in your project.  This should clearly call out the features of the library you used.  The best way to do this is with code snippets and/or screen shots. You can include HTML tags in your README.md file to add images, just make sure to upload those images to GitHub with your project.  Code highlighting can be done as described in [GitHub Help - Creating and highlighting code blocks ](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
 
 
 ## Tips
