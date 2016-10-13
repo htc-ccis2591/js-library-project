@@ -1,61 +1,60 @@
-# jquery-fav-things
-For this assignment we will add and remove information from a web page when triggered by click events.
+# js-library-project
+For this assignment each student will learn to use a different JavaScript library and create a sample project that shows it's features.
 
-Gather some information on your favorite things.  One part of that information will need to be something non-textual, like an image, sound clip or embedded video link. You will need a list of at least 5 things.
+You should select two JavaScript libraries that you are interested in and email those selections to the instructor, who will send out a list with the final library selection for each student.
 
 ## Goals:
 
-- Use the jQuery ready function to keep your code out of global scope
-- Use JavaScript coding best practices for variable and function definition
-- Use jQuery to build HTML to add items to the DOM
-- Use jQuery to handle click events
-- Show and present your code to the class in 8-10 minutes
+- Learn about a new JavaScript library through documentation and information available on the web.
+- Use that library to make a sample application that shows it's use.
+- Use JavaScript & HTML/CSS coding best practices in the creation of your application
+- Show and present your work to the class through an Ignite style presentation
 
 
 ## GitHub Repository
-https://github.com/htc-ccis2591/jquery-project1/
+https://github.com/htc-ccis2591/js-library-project/
 
 As usual you will need to fork and clone this repository to begin the assignment, and submit a pull request for grading when the assignment is complete.  
 
 
-## Design the HTML Layout
-Before you try to write JavaScript code to put these favorite things into HTML, you’ll want to know what that HTML looks like.  Update the test.html page with the HTML to show one of your favorite things.  This will allow you to address any layout and styling concerns before moving on to the JavaScript code.  
+## Study the Library
+You will need to submit a 1-2 page paper (~750 words) that gives an overview of the library you have chosen and how it is used.  This should be organized to include an introduction and closing, and should be proof-read for good grammar, spelling and sentence structure.  
 
-__Note:__ The test.html page will be graded, so you might as well do it first and make your life easier.
+You should include information on:
 
-As you design the structure, think of each thing as a section, article, or div element with child tags such as headings, paragraphs, images, etc.  The content will need to be laid out so that there is an item of your choice (i.e. a heading or image) that we can show initially while the other content is hidden.  We will then click that to show the additional information, so wrap it in a div or some other parent element to make this easier.
-
-
-## Page Behavior
-When the page first loads, you should display only a button or text that says something like:  “Click here to see my favorite things”.
-
-When that text or button is clicked, then you should remove that it from the DOM (not just hide it), and then add your favorite things into the DOM.  When they first load, only the main heading or image (whatever you designed as your summary clickable thing) should show. The remainder of the information should be in the DOM (you should see it in the Dev Tools Elements view) but should be hidden by using a CSS class.
-
-When the summary item is clicked, all other item’s detail information should be hidden and that items detail information should be shown.  
-
-__Important Note:__  Yes, jQuery has a UI component to do this.  No you cannot use it for this assignment. The assignment involves the creation of your own show/hide behavior to illustrate that you understand some basic jQuery and JavaScript.  Using any other 3rd party component to do this defeats the purpose of the assignment.
+- The name of the library and it's purpose
+- A link to their website
+- An overview of the main library features
+- Information on how to include the library in a project
+- Information on any dependencies the library has (other libraries it needs to function)
+- An example of how to use the library
 
 
-## Code Structure
-You will use jQuery to set up click events to trigger the initial favorites display and to add/remove your CSS class to hide the detail information on each thing.
+## Build an Application
+Once you are familiar with the library, you'll want to apply what you've learned to build a sample application.  This application should show off the main features of the library.  Exactly what it does will be dependent on the library selected and your interests.  Typically I would expect to see 4-6 library methods used, but this can vary based on the purpose of your library and your application.
 
-It is also expected that you will use functions to organize your code and to avoid repetition (copy/paste) of code.  At a minimum, I would expect a function that builds the HTML one favorite thing that is parameterized so that you do not repeat that code over and over to build each item.  This will also make it easier for you to change or modify that layout later if needed or desired.
+You will need to build a web page from scratch and add enough styling to the page that it looks presentable, however the main focus of the assignment is the JavaScript code and behavior.
 
-### Tips
+
+### Application Overview
+You will also need to include a README file with your project that discusses how you used the library in your project.  This should clearly call out the features of the library you used.  The best way to do this is with code snippets and/or screen shots. You can include HTML tags in your README.md file to add images, just make sure to upload those images to GitHub with your project.  Code highlighting can be done as described in [GitHub Help - Creating and highlighting code blocks ](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
+
+
+## Tips
 - Be sure to use all of the JavaScript coding best practices that we have discussed.
 - Make and use functions; try to keep them small, don’t make long unreadable monster code.
 - Watch the scope of your variables.  Keep things to as small a scope as possible.
-- Be sure to test the show/hide of your sections in different orders to ensure that they are work correctly.
-- Don't forget to include something non-textual for each favorite thing.
-- I don't expect much beauty, but things shouldn't be squished into the edges of the page either. Consider using [Bootstrap](http://getbootstrap.com/) to get a quick edge on layout.
+- Consider using [Bootstrap](http://getbootstrap.com/) to get a quick edge on your page layout.
+- Don't go wild with fonts and colors, but do make the page interesting.  [Paletton](http://paletton.com/) and [CSS Font Stack](http://www.cssfontstack.com/) can help.
+
 
 ## Presentation
-The project must be submitted with a pull request before the start of class the day that it is due.  In-class, you will show your page to the class as published on GitHub, and walk through what your page does and the code that you wrote. The presentation is limited to 10 minutes, with a hard rude stop if you run over.  However you also do not want your presentation to be too short or less than 8 minutes.
+The project presentation will be done [Ignite](http://www.ignitetalks.io/) style.  You will put together 20 slides, and set them up to automatically advance every 15 seconds for a 5 minute presentation. This is intended to create fast and fun presentation, which overviews your project and library choice __quickly__.  You will not be able to cover all of the details in a presentation of this length, but you might also be surprised how much you can say if you organize it well.
 
-### What should you cover?
-- Who you are!!! Do not forget to introduce yourself.  It may help to write your name on the board so people do not mishear.
-- What your page does. Yes, all of them basically do the same thing.  It’s ok. Pretend that someone comes in and flash clears everyone’s memory between presentations. You need to say it all again.
-- The favorite things are super cool and all, but remember to focus on the code.  
+Your first and last slides should be intro & close and expect them to be "wasted" in the sense of saying anything important.  Just aim to get who you are and what your library is out on the first slide.  The end slide can easily get run over if you talk more or slower than you expect too, so just remind people of who you are and where they can find more information on your project - GitHub info.
 
-## Extras
-Work on your page layout & presentation. Ensure the page is responsive and looks good on various display sizes. Use a nice color scheme that suits your content, and doesn't look mismatched or gaudy.  [Paleton](http://paletton.com/) can help.
+The remaining slide content is up to you, but you'll find that in 15 seconds, only a few words can be read.  So use large fonts for any text and keep it really, really short.  Communicate the information in your *talk* not your slides. Let the slides be more of a background illustration.    
+
+The better presentations tend to tell a story, so your story here is your application and learning experience. The presentation shouldn't aim to be deeply technical, just touch the surface and focus on the experience of learning and building the application.  This is however just a suggestion.  You have total freedom here in how you shape your presentation.
+
+Check out some of the presentations from the [Ignite](http://www.ignitetalks.io/) web site to get a feel for how different things have been presented. These talks tend to be less technical overall, so be careful not to dive too deep.
