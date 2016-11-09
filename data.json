@@ -1,0 +1,13 @@
+{ "salesrep" :
+    [
+        {
+        "rep": "John",
+        "qty": 30
+        },
+        {
+        "rep": "George",
+        "qty": 90
+        }    
+    
+    ]
+}
