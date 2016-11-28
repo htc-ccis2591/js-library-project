@@ -1,36 +1,86 @@
 (function () {
 
 
-    var dragula = ([document.querySelector("#left-container"), document.querySelector("#right-container")]);
+    var drake = dragula();
+    console.log(drake);
 
-    var drake = dragula({
-        isContainer: function (el) {
-            return el.classList.contains("container")
-        }
+    //--Drag From&To Containers
+    dragula([document.getElementById("left-drag"), document.getElementById("right-drag")]);
+
+    //Delete on Drag
+    dragula([document.getElementById("from-drag"), document.getElementById("to-drag")], {
+        removeOnSpill: true
     });
 
-
-    //--Example from GitHub
-    dragula(containers, {
-        isContainer: function (el) {
-            return false; // only elements in drake.containers will be taken into account
-        },
-        moves: function (el, source, handle, sibling) {
-            return true; // elements are always draggable by default
-        },
-        accepts: function (el, target, source, sibling) {
-            return true; // elements can be dropped in any of the `containers` by default
-        },
-        invalid: function (el, handle) {
-            return false; // don't prevent any drags from initiating by default
-        },
-        direction: 'vertical', // Y axis is considered when determining where an element would be dropped
-        copy: false, // elements are moved by default, not copied
-        copySortSource: false, // elements in copy-source containers can be reordered
-        revertOnSpill: false, // spilling will put the element back where it was dragged from, if this is true
-        removeOnSpill: false, // spilling will `.remove` the element, if this is true
-        mirrorContainer: document.body, // set the element that gets mirror elements appended
-        ignoreInputTextSelection: true // allows users to select input text, see details below
+    //Drag -- Copy
+    dragula([document.getElementById("copy-from"), document.getElementById("copy-to")], {
+        copy: true
     });
+
+    //--Drag && Drop ++ Colors
+    dragula([document.getElementById("left-color"), document.getElementById("right-color")])
+        .on('drag', function (el) {
+            el.className = el.className.replace("draggable", "dragged");
+        }).on('drop', function (el) {
+            el.className += "dragged";
+        }).on('over', function (el, container) {
+            container.className += "";
+        }).on('out', function (el, container) {
+            container.className = container.className.replace("draggable", "dragged");
+        });
+
+
+    //-------------------------------------------------------------//
+
+
+
+    //--Naming Drag Containers
+    //    dragula([$("left-container"), $("right-container")]);
+    //
+    //--Drag Events
+    //    dragula.on("drag", function (e) {
+    //        e.className = e.className.replace("ex-moved", "");
+    //    });
+    //
+    //    dragula.on("drop", function (e) {
+    //        e.className += "ex-moved";
+    //    });
+    //
+    //    dragula.on("over", function (e, container) {
+    //        container.className += "ex-over";
+    //    });
+    //
+    //    dragula.on("out", function (e, container) {
+    //        container.className = container.className.replace("ex-over", "");
+    //    });
+
+
+    //    var dragStart = dragula.addEventListener("dragstart", function (event) {
+    //        event.dataTransfer.setData("Text", even.target.id);
+    //        event.target.style.opacity = "0.3";
+    //    });
+    //
+    //    var dragEnd = dragula.addEventListener("dragenter", function (event) {
+    //        event.target.style.border = "5px bold";
+    //    });
+    //    dragula.ondragstart = function (event) {
+    //        event.dataTransfer.setData("Text", event.target.id);
+    //        //event.target.style.opacity = "0.2";
+    //    };
+    //
+    //    dragula.ondragover = function (event) {
+    //        event.preventDefault();
+    //    };
+    //
+    //    dragula.ondrop = function (event) {
+    //        event.preventDefault();
+    //        var text = event.dataTransfer.getData("Text");
+    //        event.target.appendChild(dragula.getElementbyId(text));
+    //    };
+
+
+
+    //-------------------------------------------------------------//
+
 
 }());

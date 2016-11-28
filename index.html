@@ -4,46 +4,164 @@
 <head>
     <title>Dragula</title>
     <link rel="stylesheet" href="dragula.css" />
+    <link rel="stylesheet" href="" />
 
     <meta charset="utf-8" />
 </head>
 
-<body class="body">
+<body>
     <header>
-        <h1>Dragula</h1>
+        <h1>My Library Example -- Dragula</h1>
     </header>
-    <div class="DivBox" id="left-container">
+    <div class="wrapper">
+        <div>
+            <div id="left-drag" class="container">
+                <div class="draggable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet, nisl ut egestas tristique, lectus ex tempus est, vitae gravida eros diam vitae libero. Nam non enim ut tortor dignissim euismod a eget lectus. Pellentesque pharetra lobortis massa et ultricies. Suspendisse suscipit ligula sed tellus vestibulum, et pharetra eros molestie. Ut semper eu felis eu interdum. Aliquam non congue justo, eu dignissim ex. Donec rhoncus turpis urna, nec cursus nunc sollicitudin vel. Mauris blandit ex diam, eget aliquet turpis accumsan gravida. .
+                </div>
+                <br>
+                <div class="draggable">Vestibulum euismod eros vitae nulla aliquam iaculis.
 
-        </p>
+                </div>
+                <br>
+                <div class="draggable">Praesent facilisis felis at felis volutpat luctus. quis.
+
+                </div>
+            </div>
+
+            <div id="right-drag" class="container">
+                <div class="draggable">Aliquam ullamcorper tellus vel cursus sagittis.
+
+                </div>
+                <br>
+                <div class="draggable">Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                </div>
+                <br>
+                <div class="draggable">Ut at tortor a metus mattis vehicula nec maximus nibh.
+
+                </div>
+                <br>
+            </div>
+        </div>
+        <p>-- Simple Drag & Drop --</p>
         <br>
-        <p>Vestibulum euismod eros vitae nulla aliquam iaculis. Donec at leo pellentesque, consectetur justo eget, feugiat leo. Quisque rhoncus nulla enim, eget gravida leo pretium nec. Curabitur enim nulla, sollicitudin eu tristique et, rhoncus ut justo. Donec ullamcorper nunc eget arcu placerat, at luctus eros consectetur. Nullam commodo, elit finibus mattis vulputate, eros massa ullamcorper diam, et gravida quam augue id est. Etiam pellentesque felis in libero posuere pharetra. Fusce interdum ut neque dictum bibendum. Vivamus vitae dolor cursus, scelerisque est quis, laoreet sem. Sed vel posuere diam. Duis id placerat felis, eu semper risus. Morbi sagittis neque odio, a condimentum neque fermentum a.
-
-        </p>
-        <br>
-        <p>Praesent facilisis felis at felis volutpat luctus. Duis cursus, lacus pellentesque mollis sollicitudin, ex quam faucibus mi, et mattis erat nisl ut libero. Pellentesque ligula ante, semper sed magna eu, venenatis condimentum arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque luctus egestas luctus. Integer fermentum consectetur urna, ac tempus diam feugiat ut. Morbi at fermentum mi, vel accumsan ligula. Sed varius luctus magna ac interdum. Cras justo nisi, molestie ut metus ut, scelerisque luctus erat. Aliquam suscipit at tortor sed mattis. Proin pulvinar velit nec libero sagittis auctor. Pellentesque a ipsum aliquet, vulputate nisl at, dictum nibh. Nunc vehicula a nisi vitae aliquet. Etiam luctus mollis massa, vitae pretium libero imperdiet tincidunt. Quisque cursus commodo eros, et pulvinar risus mollis quis.
-
-        </p>
+        <p>Drag from container A to container B</p>
     </div>
 
-    <div class="DivBox" id="right-container">
-        <p>Aliquam ullamcorper tellus vel cursus sagittis. In elit nunc, sollicitudin a aliquam eget, sollicitudin eget sem. Nam sollicitudin suscipit arcu eget dignissim. Sed eu cursus orci. Ut id aliquet ante. Phasellus in nisl ornare, viverra orci quis, pulvinar lacus. Nulla facilisi.
+    <div class="wrapper">
+        <div>
+            <div id="from-drag" class="container">
+                <div class="draggable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-        </p>
-        <br>
-        <p>Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam semper molestie auctor. Suspendisse convallis varius venenatis. Cras scelerisque tristique turpis, sit amet gravida sapien fermentum sed. Duis eu ligula nec nulla molestie varius. Vivamus scelerisque est ut imperdiet aliquet. Quisque consequat, odio eu blandit commodo, enim augue ultricies libero, quis efficitur turpis orci eu augue. Donec eleifend tortor vel tincidunt rhoncus. Sed sodales est vel sapien eleifend dapibus. Ut finibus eu diam at efficitur. Ut purus tortor, semper non tempus eget, feugiat sed risus. Nunc venenatis lobortis consectetur. Praesent dictum dignissim orci et ultricies.
+                </div>
+                <br>
+                <div class="draggable">Vestibulum euismod eros vitae nulla aliquam iaculis.
 
-        </p>
-        <br>
-        <p>Ut at tortor a metus mattis vehicula nec maximus nibh. Vestibulum nec hendrerit mauris, at tristique est. Vivamus laoreet ante in risus ultrices egestas. Aliquam felis felis, gravida eu aliquam quis, tristique a enim. Sed venenatis ante at sapien pretium ornare. Aliquam et nunc nisl. Curabitur scelerisque lectus elit, eu facilisis nunc fermentum ut. Sed eget posuere felis. Donec sollicitudin, orci sit amet dapibus interdum, tortor libero finibus augue, ac tincidunt odio enim ac nibh. Nullam iaculis sed lorem accumsan pulvinar. Integer pulvinar semper convallis.
+                </div>
+                <br>
+                <div class="draggable">Praesent facilisis felis at felis volutpat luctus. quis.
 
-        </p>
+                </div>
+            </div>
+
+            <div id="to-drag" class="container">
+                <div class="draggable">Aliquam ullamcorper tellus vel cursus sagittis.
+
+                </div>
+                <br>
+                <div class="draggable">Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                </div>
+                <br>
+                <div class="draggable">Ut at tortor a metus mattis vehicula nec maximus nibh.
+
+                </div>
+                <br>
+            </div>
+        </div>
+        <p>-- Delete -- </p>
         <br>
+        <p>Drag from container A or B and drag outside box</p>
     </div>
+
+    <div class="wrapper">
+        <div>
+            <div id="copy-from" class="container">
+                <div class="draggable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                </div>
+                <br>
+                <div class="draggable">Vestibulum euismod eros vitae nulla aliquam iaculis.
+
+                </div>
+                <br>
+                <div class="draggable">Praesent facilisis felis at felis volutpat luctus. quis.
+
+                </div>
+            </div>
+
+            <div id="copy-to" class="container">
+                <div class="draggable">Aliquam ullamcorper tellus vel cursus sagittis.
+
+                </div>
+                <br>
+                <div class="draggable">Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                </div>
+                <br>
+                <div class="draggable">Ut at tortor a metus mattis vehicula nec maximus nibh.
+
+                </div>
+                <br>
+            </div>
+        </div>
+        <p>-- Copy -- </p>
+        <br>
+        <p>Drag from container A or B to copy</p>
+    </div>
+
+    <div class="wrapper">
+        <div>
+            <div id="left-color" class="container">
+                <div class="draggable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                </div>
+                <br>
+                <div class="draggable">Vestibulum euismod eros vitae nulla aliquam iaculis.
+
+                </div>
+                <br>
+                <div class="draggable">Praesent facilisis felis at felis volutpat luctus. quis.
+
+                </div>
+            </div>
+
+            <div id="right-color" class="container">
+                <div class="draggable">Aliquam ullamcorper tellus vel cursus sagittis.
+
+                </div>
+                <br>
+                <div class="draggable">Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                </div>
+                <br>
+                <div class="draggable">Ut at tortor a metus mattis vehicula nec maximus nibh.
+
+                </div>
+                <br>
+            </div>
+        </div>
+        <p>-- Drag && Colored --</p>
+        <br>
+        <p>Dragged elements from container A to container B and vice versa will be highlighted</p>
+    </div>
+
+
+
 
     <!-- Link to Dragula CDN -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js"></script>
     <!-- Link to jQuery CDN-->
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
