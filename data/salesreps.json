@@ -1,0 +1,31 @@
+[{
+	"rep": "John",
+	"qty": 30
+}, {
+	"rep": "George",
+	"qty": 90
+},
+{
+    "rep": "Ringo",
+    "qty": 50
+},
+{
+    "rep": "Paul",
+    "qty": 110
+},
+{
+    "rep": "Cliff",
+    "qty": 17
+},
+{
+    "rep": "Gavin",
+    "qty": 65
+},
+{
+    "rep": "Morgan",
+    "qty": 47
+},
+{
+    "rep": "Ben",
+    "qty": 55
+}]
