@@ -1,3 +1,46 @@
+#Jordan Volk's READ ME FOR JS-LIBRARY-PROJECT
+I used Datejs's library to take in a user's input in a form and return the formatted date associated with it.
+
+Features used: parse(), add(), getFullYear(), isLeapYear(), days(), years(), today()
+
+ Examples below demonstrate the use of all these features, Datejs allows many phrases to be parsed as well as number fun with months, days, and years. I also used this library to evaluate if it is a leap year or not by using two different methods, the getFullYear to get the date's full year and the isLeapYear method which takes in a number for the year and returns true or false.
+ 
+ '''
+   
+
+            if (input.trim() === "m" || input.trim() === "mon" || input.trim() === "monday") {
+
+                parsedDate = Date.parse(input);
+                
+                
+                $('#results').append("Is date a leap year? " + Date.isLeapYear(parsedDate.getFullYear));
+                
+                
+                
+                if (input.trim() === "today+5" || input.trim() === "tod+5" || input.trim() === "t+5" || input.trim() === "t+5d") {
+                parsedDate = Date.today().add(5).days();
+                
+                if (input.trim() === "today+5y" || input.trim() === "tod+5yrs" || input.trim() === "t+5years") {
+                parsedDate = Date.today().add(5).years();
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # js-library-project
 For this assignment each student will learn to use a different JavaScript library and create a sample project that shows it's features.
 
