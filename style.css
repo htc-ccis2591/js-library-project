@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    background: white
+}
+footer{
+    background: white;
+}
+.wrapper {
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid blue;
+    background-color: black;
+    color: darkgray;
+}
+
+.ball {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: calc(50% - 100px);
+    background-color: white;
+    border-radius: 50%;
+}
