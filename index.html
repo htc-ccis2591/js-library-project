@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Date Conversion App</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h2>Date Conversion App</h2></header>
+    <div id="madskillz">
+        <form id="Form">
+            <p>Type a phrase or date and see if we can convert it for you!</p>
+            <p>Phrase Examples: today, tomorrow, t, tomo, today+5, today+5y, a specific day of the week </p>
+            <p>Accepted Date Formats: MM/DD/YYYY or MMDDYYYY </p>
+            <p>Note: long format must be provided for year</p>
+            <p>Example of a leap year: 1292008 or 01/29/2008 </p>
+            <input id="textbox" type="text" class>
+            <br>
+            <p id="results"></p>
+        </form>
+        <div id="yourdate" class="empty">Type a date above</div>
+        <p></p>
+        <button id="logValue">Click me to Convert!</button>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- myScipt -->
+    <script src="script.js" type="text/javascript"></script>
+
+    <!-- Datejs -->
+    <script type="text/javascript" src="date.js"></script>
+
+
+</body>
+
+</html>
