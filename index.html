@@ -4,29 +4,44 @@
 <head>
 	<title>Leaflet Demo</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+	<container id=myHeader></container>
 	<h1>Leaflet Map Demo
-	</h1>
+		</h1>
+
 	<section id=form>
-		<label>enter the latitude, ranging from -90 to +90 degrees</label>
-		<input type="text" name="longitude" id="longitude">
-		<label>enter the latitude (range in -180 to +180) degrees</label>
+		<label>Enter the latitude here (range from -90 to +90 degrees):</label>
 		<input type="text" name="latitude" id="latitude">
-		<button id="submit">Submit</button>
+		<br>
+		<label>Enter the longitude here (range -180 to +180 degrees):</label>
+		<input type="text" name="longitude" id="longitude">
+
+		<button id="submit">New Location
+		</button>
+
+		<button id="theme">New Theme</button>
+
 	</section>
+	<div id="status"></div>
+	</container>
 	<div id="mapid"></div>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" language="Javascript"></script>
 	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 	<script src="basic.js"></script>
-
 </body>
 <footer>
 	<div class="panel-footer"><a href="mailto:infiniteaxis@gmail.com">infiniteaxis@gmail.com</a> &copy;2016 </div>
 </footer>
+
 
 </html>

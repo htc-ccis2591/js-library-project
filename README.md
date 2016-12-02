@@ -1,3 +1,8 @@
+Leaflet is a javascript library that uses vector data to dynamically zoom in and out of any image. It is especially useful with maps. 
+
+
+
+
 # js-library-project
 For this assignment each student will learn to use a different JavaScript library and create a sample project that shows it's features.
 

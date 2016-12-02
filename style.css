@@ -1,10 +1,22 @@
-#mapid {
-	height: 180px;
-}
-
 body {
 	font-family: Myriad Pro, Verdana, Helvetica;
-	background-color: #777777;
+	background-color: #CBEFFD;
+	height: 100%;
+	color: #0097d0;
+}
+
+html {
+	height: 100%;
+	text-align: center;
+}
+
+#mapid {
+	height: 100%;
+}
+
+button {
+	border-radius: 15px;
+	background-color: #FFFFFF;
 }
 
 .panel-footer {
@@ -12,7 +24,7 @@ body {
 	bottom: 0;
 	height: 58px;
 	width: 100%;
-	background-color: #803f00;
-	color: #cb863e;
+	background-color: #CBEFFD;
+	color: #0097d0;
 	text-align: center;
 }
