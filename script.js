@@ -33,6 +33,4 @@
     dragula([document.getElementById("topleft-no"), document.getElementById("topright-no"), document.getElementById("bottomright-no"), document.getElementById("bottomleft-no")]);
 
 
-
-
 }());
