@@ -24,15 +24,20 @@
     filter: alpha(opacity=20);
 }
 
+div {
+    margin: auto;
+    max-width: 900px;
+}
+
 .wrapper {
     display: table;
-    float: left;
     margin: 15px;
     padding: 10px;
     border: 5px solid white;
     height: auto;
     width: auto;
     background-color: lightblue;
+    clear: both;
 }
 
 .container {
@@ -50,6 +55,7 @@
     margin: 15px;
     padding: 10px;
     border: 5px solid white;
+    width: 300px;
 }
 
 .dragged {
@@ -62,6 +68,8 @@
 
 body {
     background-color: steelblue;
+    text-align: center;
+    margin: auto;
 }
 
 h1 {
@@ -76,3 +84,13 @@ h1 {
 p {
     text-align: center;
 }
+
+input {
+    margin: auto;
+    width: auto;
+}
+
+li {
+    text-align: left;
+}
+

@@ -16,36 +16,58 @@
     <div class="wrapper">
         <div>
             <div id="left-drag" class="container">
-                <div class="draggable">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <div class="draggable">Simple Text:
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <br>
+                <div class="draggable">Input Box
+                    <input>
 
                 </div>
                 <br>
-                <div class="draggable">Vestibulum euismod eros vitae nulla aliquam iaculis.
-
-                </div>
-                <br>
-                <div class="draggable">Praesent facilisis felis at felis volutpat luctus. quis.
+                <div class="draggable">Images
+                    <br><img src="octolink.jpg" width="=250" height="250">
 
                 </div>
             </div>
 
             <div id="right-drag" class="container">
-                <div class="draggable">Aliquam ullamcorper tellus vel cursus sagittis.
+                <div class="draggable"><a href="https://bevacqua.github.io/dragula/">URLs -- Dragula</a>
 
                 </div>
                 <br>
-                <div class="draggable">Duis ac mi sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                <div class="draggable">
+                    <table>
+                        <th>Tables</th>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        </tr>
+                    </table>
 
                 </div>
                 <br>
-                <div class="draggable">Ut at tortor a metus mattis vehicula nec maximus nibh.
+                <div class="draggable">
+                    Lists:
+                    <ul>
+                        <li>Me</li>
+                        <li>Myself</li>
+                        <li>And I</li>
+                    </ul>
 
                 </div>
                 <br>
             </div>
         </div>
         <p>-- Simple Drag & Drop --</p>
-        <br>
+        <code>dragula([document.getElementById("left-drag"), document.getElementById("right-drag")]);</code>
         <p>Drag from container A to container B</p>
     </div>
 
@@ -81,7 +103,9 @@
             </div>
         </div>
         <p>-- Delete -- </p>
-        <br>
+        <code>dragula([document.getElementById("from-drag"), document.getElementById("to-drag")], {
+        removeOnSpill: true
+    });</code>
         <p>Drag from container A or B and drag outside box</p>
     </div>
 
@@ -117,7 +141,9 @@
             </div>
         </div>
         <p>-- Copy -- </p>
-        <br>
+        <code>dragula([document.getElementById("copy-from"), document.getElementById("copy-to")], {
+        copy: true
+    });</code>
         <p>Drag from container A or B to copy</p>
     </div>
 
@@ -153,12 +179,71 @@
             </div>
         </div>
         <p>-- Drag && Colored --</p>
-        <br>
+        <code>dragula([document.getElementById("left-color"), document.getElementById("right-color")])<br>
+        .on('drag', function (el) {<br>
+            el.className = el.className.replace("draggable", "dragged");<br>
+        }).on('drop', function (el) {<br>
+            el.className += "dragged";<br>
+        }).on('over', function (el, container) {<br>
+            container.className += "";<br>
+        }).on('out', function (el, container) <br>
+            container.className = container.className.replace("draggable", "dragged");<br>
+        });</code>
         <p>Dragged elements from container A to container B and vice versa will be highlighted</p>
     </div>
 
+    <div class="wrapper">
+        <div>
+            <div id="topleft-no" class="container">
+                <div class="draggable">
+                    <h2>A</h2>
+                </div>
+                <br>
+                <div class="draggable">
+                    <h2>B</h2>
+                </div>
 
+            </div>
 
+            <div id="topright-no" class="container">
+                <div class="draggable">
+                    <h2>C</h2>
+                </div>
+                <br>
+                <div class="draggable">
+                    <h2>D</h2>
+                </div>
+
+            </div>
+            <br>
+            <div id="bottomright-no" class="container">
+                <div class="draggable">
+                    <h2>F</h2>
+                </div>
+                <br>
+                <div class="draggable">
+                    <h2>G</h2>
+                </div>
+
+            </div>
+            <div id="bottomleft-no" class="container">
+                <div class="draggable">
+                    <h2>H</h2>
+                </div>
+                <br>
+                <div class="draggable">
+                    <h2>I</h2>
+                </div>
+
+            </div>
+        </div>
+        <p>-- Drag & Drop: Cont. --</p>
+        <code>dragula([document.getElementById("topleft-no"), document.getElementById("topright-no"),<br> 
+            document.getElementById("bottomright-no"), document.getElementById("bottomleft-no")]);</code>
+        <p>Drag/drop from any container. Dragula can only be used with multiple containers!</p>
+    </div>
+<footer>"OctoLink" courtesy of : https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjZ28HiktLQAhWI3YMKHTQoA7UQjRwIBw&url=https%3A%2F%2Fwww.pinterest.com%2Fcyberlogi%2Ffavorite-github-icons%2F&psig=AFQjCNFmw6RCsg1ri7VgeiQUraMzmlaSBQ&ust=1480652560274856
+</footer>
 
     <!-- Link to Dragula CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js"></script>

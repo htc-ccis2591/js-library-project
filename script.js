@@ -1,8 +1,8 @@
 (function () {
 
 
-    var drake = dragula();
-    console.log(drake);
+
+    console.log(dragula());
 
     //--Drag From&To Containers
     dragula([document.getElementById("left-drag"), document.getElementById("right-drag")]);
@@ -29,58 +29,10 @@
             container.className = container.className.replace("draggable", "dragged");
         });
 
-
-    //-------------------------------------------------------------//
-
-
-
-    //--Naming Drag Containers
-    //    dragula([$("left-container"), $("right-container")]);
-    //
-    //--Drag Events
-    //    dragula.on("drag", function (e) {
-    //        e.className = e.className.replace("ex-moved", "");
-    //    });
-    //
-    //    dragula.on("drop", function (e) {
-    //        e.className += "ex-moved";
-    //    });
-    //
-    //    dragula.on("over", function (e, container) {
-    //        container.className += "ex-over";
-    //    });
-    //
-    //    dragula.on("out", function (e, container) {
-    //        container.className = container.className.replace("ex-over", "");
-    //    });
+    //--Multiple Containers
+    dragula([document.getElementById("topleft-no"), document.getElementById("topright-no"), document.getElementById("bottomright-no"), document.getElementById("bottomleft-no")]);
 
 
-    //    var dragStart = dragula.addEventListener("dragstart", function (event) {
-    //        event.dataTransfer.setData("Text", even.target.id);
-    //        event.target.style.opacity = "0.3";
-    //    });
-    //
-    //    var dragEnd = dragula.addEventListener("dragenter", function (event) {
-    //        event.target.style.border = "5px bold";
-    //    });
-    //    dragula.ondragstart = function (event) {
-    //        event.dataTransfer.setData("Text", event.target.id);
-    //        //event.target.style.opacity = "0.2";
-    //    };
-    //
-    //    dragula.ondragover = function (event) {
-    //        event.preventDefault();
-    //    };
-    //
-    //    dragula.ondrop = function (event) {
-    //        event.preventDefault();
-    //        var text = event.dataTransfer.getData("Text");
-    //        event.target.appendChild(dragula.getElementbyId(text));
-    //    };
-
-
-
-    //-------------------------------------------------------------//
 
 
 }());
