@@ -9,3 +9,7 @@
 .axis--x path {
   display: none;
 }
+
+.bartext {
+    font-weight: bold;
+}

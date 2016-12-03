@@ -89,6 +89,20 @@ $.getJSON( "data/salesreps.json").success(function(data) {
       .attr("transform", "translate(50," + theight + ")")
       .call(d3.axisBottom(x));
     
+    var yTextPadding = 20;
+    g.selectAll("text.bar")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class", "bartext")
+        .attr("text-anchor", "middle")
+        .attr("fill", "black")
+        .text(function(d){
+            return d.qty;
+            })
+        .attr("x", function(d) { return x(d.rep)+(x.bandwidth()/2); })
+        .attr("y", function(d){  return y(d.qty); })
+    
 });
 
 });
