@@ -1,0 +1,65 @@
+  body {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  background-color: #66CCFF;
+  font-family: sans-serif;
+}
+
+input {
+  padding-bottom: 5px;
+  margin: 5px;
+  
+}
+
+
+#checks{
+  margin:10px;
+  text-align: left;
+}
+
+li{
+  list-style-type: none;
+}
+
+button {
+  padding: 1px;
+  margin: auto;
+  box-shadow: 1px 2px 1px 1px #000000;
+}
+
+.GroceryListMain .header input {
+  margin: auto;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  box-shadow: 1px 2px 1px 1px #000000;
+}
+.GroceryListMain .header button {
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 6px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #000000;
+}
+ 
+.GroceryListMain .header button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+ 
+}
+
+#map{
+  margin: auto;
+  height: 400px;
+  width: 550px;
+  border: 1px solid black;
+  box-shadow: 1px 2px 2px 4px #000000;
+}
+
+ul{
+  margin:-48px;
+}
