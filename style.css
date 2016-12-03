@@ -1,0 +1,125 @@
+table {
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: greenyellow;
+    border-bottom-style: solid;
+    border-bottom-width: 30px;
+    border-bottom-color: black;
+    height: 500px;
+    width:800px;
+}
+#line1 {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #000000;
+    margin-left: 0px;
+    margin-top: -410px;
+}
+#line2 {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #000000;
+    margin-left: 180px;
+    margin-top: -410px;
+}
+#line3 {
+    position: absolute;
+    width: 435px;
+    height: 20px;
+    background: #000000;
+    margin-left: 360px;
+    margin-top: -410px;
+}
+#line4 {
+    position: absolute;
+    width: 120px;
+    height: 400px;
+    background: #000000;
+    margin-left: 180px;
+    margin-top: -390px;
+}
+#line5 {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #000000;
+    margin-left: 100px;
+    margin-top: -410px;
+    visibility: hidden;
+}
+#line6 {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #000000;
+    margin-left: 250px;
+    margin-top: -410px;
+}
+#line7 {
+    position: absolute;
+    width: 20px;
+    height: 130px;
+    background: #000000;
+    margin-left: 580px;
+    margin-top: -100px;
+}
+#line8 {
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    background: #000000;
+    margin-left: 290px;
+    margin-top: -390px;
+}
+#line9 {
+    position: absolute;
+    width: 20px;
+    height: 330px;
+    background: #000000;
+    margin-left: 360px;
+    margin-top: -390px;
+}
+#circle {
+    width: 50px;
+    height: 50px;
+    margin-left: 130px;
+    margin-top: 430px;
+}
+#circle img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+/*BUTTON*/
+button {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -500px;
+  background: transparent;
+  border: none;
+  width: 148px;
+  height: 43px;
+  padding: 0;
+  overflow: visible;
+}
+button svg {
+  position: absolute;
+  left: 0;
+  top: -55px;
+}
+button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font: 22px 'Source Sans Pro', 'HelveticaNeue', Arial;
+  line-height: 41px;
+  color: #fff;
+  text-align: center;
+}
