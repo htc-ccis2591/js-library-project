@@ -1,0 +1,96 @@
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+
+.gu-hide {
+    display: none !important;
+}
+
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+div {
+    margin: auto;
+    max-width: 900px;
+}
+
+.wrapper {
+    display: table;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid white;
+    height: auto;
+    width: auto;
+    background-color: lightblue;
+    clear: both;
+}
+
+.container {
+    display: table-cell;
+    width: 50%;
+    float: inherit;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid white;
+    background-color: skyblue;
+}
+
+.draggable {
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid white;
+    width: 300px;
+}
+
+.dragged {
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid white;
+    background-color: coral;
+}
+
+body {
+    background-color: steelblue;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.divClass {
+    border: 5px solid gray;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    margin: auto;
+    width: auto;
+}
+
+li {
+    text-align: left;
+}
+
