@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Javascript Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <h2>Anime.js</h2></header>
+    <main>
+        <input id="progress" type="range" value="0" min="0" max="100">
+        <br>
+        <button id="play">Play</button>
+        <button id="stop">Stop</button>
+        <br>
+
+        <section class="wrapper">
+
+            <div class="vertical"></div>
+            <div class="horizontal"></div>
+            <canvas class="explode" width="736" height="676"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copywrite &copy; Kyle Brandt 2016</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Anime.js -->
+    <script src="anime-master/anime.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
