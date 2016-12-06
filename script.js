@@ -5,7 +5,7 @@ $(function () {
         var getFontSize = function () {
             return parseFloat(getComputedStyle(document.documentElement).fontSize);
         }
-
+ 
         var canvas = document.querySelector('.explode');
         var ctx = canvas.getContext('2d');
         var colors = ['#E15B0C', '#FF9143', '#4B0600', '#D37927'];
